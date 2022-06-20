@@ -1,0 +1,51 @@
+% Julie Marie Bekkevolds masteroppgave
+\documentclass[a4paper, 12pt, twoside]{report}
+\usepackage{style}
+
+\title{Example Master's Thesis}
+\author{Julie Marie Bekkevold}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\frontmatter
+\input{Forord/Abstract}
+\input{Forord/Sammendrag}
+\input{Forord/Preface}
+\input{Forord/Acknowledgements}
+
+\chapter*{List of Acronyms}
+\addcontentsline{toc}{chapter}{List of Acronyms}
+\begin{acronym}[STEM]
+\input{acronyms.tex}
+\end{acronym}
+
+
+
+\tableofcontents
+% \listoffigures
+
+\mainmatter
+\input{Chapters/01_Intro}
+
+\input{Chapters/02_Theory}
+
+\input{Chapters/03_Materials_and_Methods}
+
+\input{Chapters/04_Results}
+
+\input{Chapters/05_Discussion}
+
+\input{Chapters/06_Conclusion}
+
+\input{Chapters/07_Future}
+
+\printbibliography[heading = bibintoc, title = References] 
+
+\addappendix
+\input{./Appendices/01_Code}
+
+\end{document}
